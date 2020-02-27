@@ -28,7 +28,7 @@ You can use `git help <command>` or `git help -a` to see a list of commands with
 `git help rebase` :trollface:
 
 Anyway, `git checkout <new-branch>` and then `git rebase <target-branch>` should put all commits from `<new-branch>` 
-on top of `<target-branch>`.
+on top of `<target-branch>`. Remember that you can always `git rebase --abort` if you feel like you're messing it up.
 
 If you want a little bit more flexibility `git rebase --onto <target-branch> <commit-range>` should do the trick.
 `<target-branch>` is where the range of commits will be applied to.
