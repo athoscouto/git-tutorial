@@ -34,7 +34,11 @@ If you want a little bit more flexibility `git rebase --onto <target-branch> <co
 `<commit-range>` is a commit interval that is open on the left.
 This means that if `<commit-range> == 4d45edc c252711`, every commit from `4d45edc` (not included) to `c252711` (inclusive) will be rebased.
 
+Let's try it! Try to send all changes on the `README.md` at this branch (everything after `820ed1a` until `HEAD`) onto `feat/2`.
+
 ### `git rebase` for fancy stuff
 You can always use `git rebase -i <base-commit>` to fix messed up histories.
-Let's try it on the `feat/messed-up` branch.
 This is an iterative command and comes with a tutorial embeded.
+
+Let's try it on the `feat/messed-up` branch.
+Run `git rebase -i master`
